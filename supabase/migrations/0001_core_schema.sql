@@ -428,7 +428,7 @@ language sql stable security definer set search_path = public as $$
   select case
     when not is_org_member(p_org) then false
     when org_role_of(p_org) = 'dept_manager' then
-      p_team is not null and p_team = any((select team_ids from organization_members where org_id = p_org and user_id = auth.uid()))
+      p_team is not null and exists (select 1 from organization_members m where m.org_id = p_org and m.user_id = auth.uid() and p_team = any(m.team_ids))
     else true
   end;
 $$;
