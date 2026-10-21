@@ -1,17 +1,6 @@
+import { CAPS } from "@/lib/marketing-content";
 import Link from "next/link";
 
-const CAPS = [
-  ["Workforce Overview", "Headcount, turnover, workload, engagement and staffing in one executive view, with data period, coverage and limitations on every metric."],
-  ["Attrition Intelligence", "Team-level indicators and risk signals with confidence labels, evidence, data gaps and reviewable status. Descriptive unless a validated model exists."],
-  ["Root Cause Analysis", "Observed patterns, possible explanations, alternative explanations, and the additional data needed — never correlation presented as cause."],
-  ["Workload & Capacity", "Demand versus capacity, overtime and backlog trends, to show where hiring may help and where redistribution or process change may fit better."],
-  ["Employee Feedback", "Aggregate themes and scores from survey exports, with small-group suppression and human review of themes."],
-  ["Manager Insights", "Constructive, evidence-based recommendations with owners, priorities, review dates and recorded outcomes. No manager rankings."],
-  ["Workforce Simulator", "Deterministic what-if scenarios with visible formulas, saved base and alternative cases, and clear assumptions."],
-  ["Turnover Cost", "Editable, reproducible cost model that marks every figure as imported, user-entered or estimated."],
-  ["Leadership Reports", "Editable reports generated from your data and analysis, exportable as CSV or via print to PDF."],
-  ["Ask PeopleLogic", "A Gemini-powered assistant limited to your organization's approved, aggregated analysis results."],
-];
 
 export default function Capabilities() {
   return (

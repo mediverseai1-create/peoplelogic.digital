@@ -1,13 +1,6 @@
+import { STEPS } from "@/lib/marketing-content";
 import Link from "next/link";
 
-const STEPS = [
-  ["Create your organization", "Sign up, name your organization and set a minimum group size for privacy."],
-  ["Import team-level data", "Upload CSV files for headcount, departures, staffing, workload, surveys or replacement costs. A guided workflow validates, previews and maps every column before anything is stored."],
-  ["Review indicators and evidence", "PeopleLogic computes transparent indicators per team and shows the evidence, period, sample and limits behind each."],
-  ["Investigate possible causes", "Review hypotheses and alternative explanations, and see what additional data would sharpen them."],
-  ["Plan and simulate", "Test staffing scenarios and estimate turnover cost with formulas you can inspect."],
-  ["Report and track", "Generate leadership reports, assign interventions, and record whether they helped."],
-];
 
 export default function HowItWorks() {
   return (

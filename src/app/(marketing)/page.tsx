@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CapabilitiesSection, HowItWorksSection, PricingSection, PrinciplesSection } from "@/components/HomeSections";
 
 const PROBLEMS = [
   ["Reactive by default", "Most organizations learn why people leave only after resignations or exit interviews — when the cost is already incurred."],
@@ -60,6 +61,11 @@ export default function Home() {
           <Link href="/how-it-works" className="mt-8 inline-block text-sm font-medium text-plum-700 underline">See how it works</Link>
         </div>
       </section>
+
+      <CapabilitiesSection />
+      <HowItWorksSection />
+      <PrinciplesSection />
+      <PricingSection />
 
       <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid items-center gap-8 md:grid-cols-2">

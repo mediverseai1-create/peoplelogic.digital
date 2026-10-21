@@ -1,14 +1,4 @@
-const PRINCIPLES = [
-  ["Team-level, never individual", "No individual attrition-risk scores, no rankings of employees, and no inference of any person's intentions, loyalty, health or personality."],
-  ["Small groups are protected", "An administrator-configurable minimum group size (conservative default, with a hard floor) suppresses or combines groups that could identify someone."],
-  ["No identifiable survey output", "Respondent identifiers are not stored. Free-text comments are redacted on a best-effort basis and visible only to authorized roles."],
-  ["CVs are not used to judge people", "PeopleLogic does not use CVs to infer attrition risk or make individual judgments."],
-  ["Evidence is labelled", "Observed indicators, potential risk signals, model estimates, AI explanations and verified findings are kept distinct, with uncertainty and limitations shown."],
-  ["Correlation is not cause", "Findings are hypotheses with alternative explanations and data needed to test them."],
-  ["No automated employment decisions", "PeopleLogic never recommends firing, disciplining or penalizing individuals or managers based on model output. Leaders remain responsible for decisions."],
-  ["Access controls and audit", "Role-based access, row-level security on tenant data, department-manager scoping, and an audit log of important actions."],
-  ["AI with guardrails", "The assistant only sees aggregated, organization-scoped results, cannot run arbitrary queries, and says when evidence is insufficient."],
-];
+import { PRINCIPLES } from "@/lib/marketing-content";
 
 export default function PrivacyPrinciples() {
   return (

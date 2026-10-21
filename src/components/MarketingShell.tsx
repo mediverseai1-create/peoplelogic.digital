@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 
 const LINKS = [
-  { href: "/capabilities", label: "Capabilities" },
-  { href: "/how-it-works", label: "How it works" },
-  { href: "/privacy-principles", label: "Privacy & responsible AI" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/#capabilities", label: "Capabilities" },
+  { href: "/#how-it-works", label: "How it works" },
+  { href: "/#privacy", label: "Privacy & responsible AI" },
+  { href: "/#pricing", label: "Pricing" },
 ];
 
 export function MarketingShell({ children }: { children: React.ReactNode }) {
