@@ -7,7 +7,7 @@ export interface Series {
   label: string;
   color?: string;
 }
-const PALETTE = ["#5a3354", "#b8654a", "#4b5d8f", "#3f7d5c", "#b7791f"];
+const PALETTE = ["#27503b", "#9cc24a", "#4b5d8f", "#b8654a", "#b7791f"];
 
 export function Chart({
   title,
@@ -31,7 +31,7 @@ export function Chart({
   const fmt = (v: number) => (format === "pct" ? `${(v * 100).toFixed(1)}%` : v.toLocaleString(undefined, { maximumFractionDigits: 1 }));
   const Common = (
     <>
-      <CartesianGrid stroke="#e8dec9" strokeDasharray="3 3" />
+      <CartesianGrid stroke="#e4e0d0" strokeDasharray="3 3" />
       <XAxis dataKey={xKey} tick={{ fontSize: 11, fill: "#4a4650" }} />
       <YAxis tick={{ fontSize: 11, fill: "#4a4650" }} tickFormatter={fmt} width={48} />
       <Tooltip formatter={(v: number) => fmt(v)} contentStyle={{ fontSize: 12, borderRadius: 6 }} />

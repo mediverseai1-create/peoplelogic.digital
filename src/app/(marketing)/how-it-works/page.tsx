@@ -16,7 +16,7 @@ export default function HowItWorks() {
       <ol className="mt-10 space-y-8">
         {STEPS.map(([t, b], i) => (
           <li key={t} className="flex gap-5">
-            <div className="font-display text-4xl text-terracotta">{i + 1}</div>
+            <div className="font-display text-4xl text-plum-600">{i + 1}</div>
             <div>
               <h2 className="text-xl text-plum-900">{t}</h2>
               <p className="mt-1 text-sm text-charcoal-600">{b}</p>

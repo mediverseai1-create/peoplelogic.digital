@@ -16,28 +16,20 @@ const FLOW = [
 export default function Home() {
   return (
     <>
-      <section className="bg-plum-950 text-ivory">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-5 md:py-28">
-          <div className="md:col-span-3">
-            <p className="text-xs uppercase tracking-[0.2em] text-rose-muted">Workforce intelligence</p>
-            <h1 className="mt-4 text-4xl leading-tight md:text-6xl">Understand workforce risk before it becomes employee turnover.</h1>
-            <p className="mt-6 max-w-xl text-lg text-ivory-300">
-              PeopleLogic connects workforce, workload, engagement, and organizational data to help leaders understand where teams need support, why risks may be emerging, and which interventions are worth considering.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/sign-up" className="btn-accent">Get Started</Link>
-              <Link href="/capabilities" className="btn border border-ivory/30 text-ivory hover:bg-white/10">Explore the Platform</Link>
-            </div>
+      <section className="bg-gradient-to-b from-[#e3edc3] via-[#eef2dc] to-ivory">
+        <div className="mx-auto max-w-4xl px-5 pb-16 pt-20 text-center md:pb-24 md:pt-28">
+          <p className="inline-block rounded-full border border-plum-900/15 bg-white/60 px-3 py-1 text-xs font-medium text-plum-800">Workforce intelligence for people leaders</p>
+          <h1 className="mt-6 text-4xl leading-[1.08] text-plum-900 md:text-6xl">Understand workforce risk before it becomes employee turnover.</h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-charcoal-600">
+            PeopleLogic connects workforce, workload, engagement, and organizational data to help leaders understand where teams need support, why risks may be emerging, and which interventions are worth considering.
+          </p>
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <Link href="/sign-up" className="btn-primary px-7 py-3">Get Started</Link>
+            <Link href="/capabilities" className="btn-secondary bg-white/70 px-7 py-3">Explore the Platform</Link>
           </div>
-          <aside className="self-end rounded-lg border border-white/15 p-6 md:col-span-2" aria-label="Privacy by design">
-            <h2 className="text-xl">Team-level by design</h2>
-            <ul className="mt-3 space-y-2 text-sm text-ivory-300">
-              <li>No individual attrition scores or employee rankings.</li>
-              <li>Small groups are suppressed so insights cannot identify a person.</li>
-              <li>Every insight shows its evidence, period and uncertainty.</li>
-              <li>Decision support only — leaders decide.</li>
-            </ul>
-          </aside>
+          <ul className="mx-auto mt-12 flex max-w-3xl flex-wrap justify-center gap-2 text-sm text-plum-800" aria-label="Privacy by design">
+            {["No individual attrition scores", "Small groups are suppressed", "Evidence and uncertainty on every insight", "Decision support only"].map((t) => <li key={t} className="rounded-full border border-plum-900/10 bg-white/70 px-4 py-1.5">{t}</li>)}
+          </ul>
         </div>
       </section>
 
@@ -45,7 +37,7 @@ export default function Home() {
         <h2 className="text-3xl text-plum-900">The workforce problem</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {PROBLEMS.map(([t, b]) => (
-            <div key={t} className="border-t-2 border-terracotta pt-4">
+            <div key={t} className="rounded-2xl border border-ivory-300 bg-white p-6">
               <h3 className="text-xl text-plum-900">{t}</h3>
               <p className="mt-2 text-sm text-charcoal-600">{b}</p>
             </div>
@@ -59,7 +51,7 @@ export default function Home() {
           <ol className="mt-8 grid gap-6 md:grid-cols-4">
             {FLOW.map(([t, b], i) => (
               <li key={t}>
-                <div className="font-display text-4xl text-terracotta">{i + 1}</div>
+                <div className="font-display text-4xl text-plum-600">{i + 1}</div>
                 <h3 className="mt-1 text-lg text-plum-900">{t}</h3>
                 <p className="mt-1 text-sm text-charcoal-600">{b}</p>
               </li>

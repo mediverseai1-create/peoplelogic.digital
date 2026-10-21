@@ -17,7 +17,7 @@ export default function PrivacyPrinciples() {
       <p className="mt-3 text-charcoal-600">PeopleLogic helps leaders improve working conditions, staffing and management practices. It is not built to monitor employees.</p>
       <div className="mt-10 space-y-6">
         {PRINCIPLES.map(([t, b]) => (
-          <div key={t} className="border-l-2 border-terracotta pl-4">
+          <div key={t} className="border-l-2 border-plum-600 pl-4">
             <h2 className="text-xl text-plum-900">{t}</h2>
             <p className="mt-1 text-sm text-charcoal-600">{b}</p>
           </div>

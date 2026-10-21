@@ -1,5 +1,5 @@
 -- PeopleLogic core schema: multi-tenant, RLS on every tenant-owned table.
--- Apply with `supabase db push` or by running this file in the Supabase SQL editor.
+-- Apply with `supabase db push` or by running this file in the Saupabase SQL editor.
 
 create extension if not exists "pgcrypto";
 

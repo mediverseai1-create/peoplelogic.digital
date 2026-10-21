@@ -1,15 +1,16 @@
 import type { Config } from "tailwindcss";
 
+// Palette: plum.* = deep forest green, ivory.* = warm cream, terracotta.* = soft lime accent (token names kept for stability).
 const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        plum: { 950: "#1f0f1d", 900: "#2e1a2c", 800: "#43263f", 700: "#5a3354", 600: "#734269", 100: "#eadfe8" },
-        ivory: { DEFAULT: "#faf6ef", 100: "#f4ede0", 200: "#e8dec9", 300: "#d6c9ae" },
-        terracotta: { DEFAULT: "#b8654a", 600: "#9c4f36", 100: "#f3ddd4" },
+        plum: { 950: "#12241b", 900: "#1b3a2b", 800: "#27503b", 700: "#336a4d", 600: "#3f8460", 100: "#dcebdd" },
+        ivory: { DEFAULT: "#f6f4ec", 100: "#efece0", 200: "#e4e0d0", 300: "#d9d4c1" },
+        terracotta: { DEFAULT: "#9cc24a", 600: "#86ac3a", 100: "#eef5d8" },
         rose: { muted: "#c98b8b" },
-        charcoal: { DEFAULT: "#26232a", 600: "#4a4650", 400: "#767079" },
+        charcoal: { DEFAULT: "#1e211f", 600: "#4c524e", 400: "#7b817c" },
         signal: { high: "#a8342b", watch: "#b7791f", ok: "#3f7d5c", info: "#4b5d8f" },
       },
       fontFamily: {
